@@ -2,7 +2,7 @@
   "name": "maratona",
   "version": "1.0.0",
   "description": "Freelance Calculator",
-  "main": "src/server.jsx",
+  "main": "src/server.js",
   "scripts": {
     "dev": "nodemon ."
   },
