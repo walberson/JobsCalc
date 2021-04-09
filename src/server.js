@@ -4,9 +4,13 @@ const server = express()
 //chama o arquivo routes e joga na const routes
 const routes = require("./routes")
 
+const path = require("path")
+
 //Usar template Engine
 server.set('view engine', 'ejs')
 
+//mudar localização da pasta views -- .set configurar alguma coisa
+server.set('views', path.join(__dirname, 'views'))
 
 //habilitar arquivos estáticos (imagem etc)
 server.use(express.static("public"))
